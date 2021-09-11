@@ -315,18 +315,11 @@ ul {
   justify-content: center;
   margin-bottom: 30px;
 }
-.socials-item {
-  display: flex;
+
+.socials-link {
   width: 44px;
   height: 44px;
-}
-
-.socials-item :not(:last child) {
   margin-right: 10px;
-}
-.socials-link {
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -606,4 +599,3 @@ ul {
   right: 8px;
   top: 8px;
 }*/
-  
