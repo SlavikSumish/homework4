@@ -76,9 +76,12 @@ ul {
   letter-spacing: 2%;
   color: var(--main-text-color);
 }
-.header-item :hover,
-.header-item :focus {
-  color: var(--accent-color);
+.link :hover use,
+.link :focus use
+.link :hover,
+.link :focus {
+  fill: var(--accent-color);
+  color: var(--accent-color)
 }
 .header-mail {
   margin-right: 10px;
@@ -95,16 +98,13 @@ ul {
   letter-spacing: 2%;
   color: var(--main-title-color);
 }
-.header-contact-item {
+.header-contact {
   display: flex;
   align-items: center;
 }
 .header-contact :hover,
 .header-contact :focus {
   color: var(--accent-color);
-}
-.header-mail: {
-  caret-color: auto;
 }
 
 /*----HERO-title----*/
@@ -155,8 +155,15 @@ ul {
 .hero-list {
   display: flex;
 }
-.hero-logo {
+
+.wrapper {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .hero-item {
   min-width: 270px;
@@ -250,6 +257,7 @@ ul {
   margin-bottom: 30px;
 }
 .socials-item {
+  display: flex;
   width: 44px;
   height: 44px;
 }
@@ -273,6 +281,10 @@ ul {
 .socials-link:hover .socials-icon,
 .socials-link:focus .socials-icon {
   fill: var(--secondary-text-color);
+}
+
+.socials-icon use {
+  fill: #afb1b8;
 }
 
 /*---------clients---------*/
@@ -315,12 +327,10 @@ ul {
 
 /*-------footer-------*/
 .contact {
-  display: flex;
   background-color: #2f303a;
 }
 .contact-title {
-  width: 321px;
-  margin-right: 70px;
+  display: flex;
 }
 .contact-list {
   margin-top: 20px;
@@ -354,6 +364,7 @@ ul {
 .join {
   display: flex;
   display: block;
+  padding-left: 70px;
 }
 
 .join-title {
@@ -385,8 +396,7 @@ ul {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.join-list :nth-last-child(4n-1) {
-  border-radius: 50%;
+.join-link:hover {
   background-color: var(--accent-color);
 }
 
